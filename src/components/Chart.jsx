@@ -20,7 +20,7 @@ export const Chart = (project) => {
   }, []);
 
   return (
-    <Grid item xs={6}>
+    <Grid item xs={8} md={6}>
       <div className="chart">
         <div className="chart-head">
           <h2 className="title">{project.project}</h2>
