@@ -3,7 +3,7 @@ import "./chart.css";
 
 import { getProjectData } from "../helpers/getProjectData";
 import { weeklyFromDaily } from "../helpers/downloadAgg";
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 import { Grid } from "@material-ui/core";
 import { DownloadCSV } from "./DownloadCSV";
 
@@ -27,16 +27,14 @@ export const Chart = (project) => {
           <DownloadCSV data={projectData} project={project.project} />
         </div>
         <ResponsiveContainer width="75%" height={300}>
-          <LineChart
+          <BarChart
             data={projectData}
           >
-            <Line
+            <Bar
               type="monotone"
               dataKey="downloads"
               stroke="#C49662"
-              strokeWidth={3}
-              dot={false}
-              activeDot={{ r: 8 }}
+              fill="#C49662"
             />
             <XAxis
               dataKey="day"
@@ -48,7 +46,7 @@ export const Chart = (project) => {
               stroke="#B6B8C0"
             />
             <Tooltip />
-          </LineChart>
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </Grid>
