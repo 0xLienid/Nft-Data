@@ -1,8 +1,5 @@
 export const weeklyFromDaily = (dailyData) => {
-  console.log(dailyData.length % 7);
-  console.log(dailyData);
   dailyData.splice(0, (dailyData.length % 7));
-  console.log(dailyData);
 	let weeklyData = [];
 	let currData = {
 		downloads: 0,
