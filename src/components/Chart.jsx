@@ -3,7 +3,7 @@ import "./chart.css";
 
 import { getProjectData } from "../helpers/getProjectData";
 import { weeklyFromDaily } from "../helpers/downloadAgg";
-import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import { Grid } from "@material-ui/core";
 import { DownloadCSV } from "./DownloadCSV";
 
@@ -26,30 +26,30 @@ export const Chart = (project) => {
           <h2 className="title">{project.project}</h2>
           <DownloadCSV data={projectData} project={project.project} />
         </div>
-        <LineChart
-          width={500}
-          height={500}
-          data={projectData}
-        >
-          <Line
-            type="monotone"
-            dataKey="downloads"
-            stroke="#C49662"
-            strokeWidth={3}
-            dot={false}
-            activeDot={{ r: 8 }}
-          />
-          <XAxis
-            dataKey="day"
-            tick={{ fill: "#B6B8C0" }}
-            stroke="#B6B8C0"
-          />
-          <YAxis
-            tick={{ fill: "#B6B8C0" }}
-            stroke="#B6B8C0"
-          />
-          <Tooltip />
-        </LineChart>
+        <ResponsiveContainer width="50%" height={200}>
+          <LineChart
+            data={projectData}
+          >
+            <Line
+              type="monotone"
+              dataKey="downloads"
+              stroke="#C49662"
+              strokeWidth={3}
+              dot={false}
+              activeDot={{ r: 8 }}
+            />
+            <XAxis
+              dataKey="day"
+              tick={{ fill: "#B6B8C0" }}
+              stroke="#B6B8C0"
+            />
+            <YAxis
+              tick={{ fill: "#B6B8C0" }}
+              stroke="#B6B8C0"
+            />
+            <Tooltip />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     </Grid>
   );
