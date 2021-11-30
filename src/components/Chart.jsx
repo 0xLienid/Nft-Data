@@ -20,13 +20,13 @@ export const Chart = (project) => {
   }, []);
 
   return (
-    <Grid item xs={8} md={6}>
+    <Grid item s={12} md={6}>
       <div className="chart">
         <div className="chart-head">
           <h2 className="title">{project.project}</h2>
           <DownloadCSV data={projectData} project={project.project} />
         </div>
-        <ResponsiveContainer width="50%" height={200}>
+        <ResponsiveContainer width="75%" height={300}>
           <LineChart
             data={projectData}
           >
