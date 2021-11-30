@@ -5,3 +5,16 @@
 	justify-content: center;
 	align-content: center;
 }
+
+.chart-head {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	margin-right: 12px;
+	color: #B6B8C0;
+}
