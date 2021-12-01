@@ -1,0 +1,12 @@
+.charts-body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.dash-title {
+  color: #B6B8C0;
+}
