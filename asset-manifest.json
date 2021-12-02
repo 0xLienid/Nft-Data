@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Nft-Data/static/css/main.a8b6e677.chunk.css",
-    "main.js": "/Nft-Data/static/js/main.63f65c1c.chunk.js",
-    "main.js.map": "/Nft-Data/static/js/main.63f65c1c.chunk.js.map",
+    "main.js": "/Nft-Data/static/js/main.b4d21af8.chunk.js",
+    "main.js.map": "/Nft-Data/static/js/main.b4d21af8.chunk.js.map",
     "runtime-main.js": "/Nft-Data/static/js/runtime-main.93787648.js",
     "runtime-main.js.map": "/Nft-Data/static/js/runtime-main.93787648.js.map",
-    "static/js/2.8534a546.chunk.js": "/Nft-Data/static/js/2.8534a546.chunk.js",
-    "static/js/2.8534a546.chunk.js.map": "/Nft-Data/static/js/2.8534a546.chunk.js.map",
+    "static/js/2.db7e9e39.chunk.js": "/Nft-Data/static/js/2.db7e9e39.chunk.js",
+    "static/js/2.db7e9e39.chunk.js.map": "/Nft-Data/static/js/2.db7e9e39.chunk.js.map",
     "static/js/3.2e8a4f23.chunk.js": "/Nft-Data/static/js/3.2e8a4f23.chunk.js",
     "static/js/3.2e8a4f23.chunk.js.map": "/Nft-Data/static/js/3.2e8a4f23.chunk.js.map",
     "index.html": "/Nft-Data/index.html",
     "static/css/main.a8b6e677.chunk.css.map": "/Nft-Data/static/css/main.a8b6e677.chunk.css.map",
-    "static/js/2.8534a546.chunk.js.LICENSE.txt": "/Nft-Data/static/js/2.8534a546.chunk.js.LICENSE.txt"
+    "static/js/2.db7e9e39.chunk.js.LICENSE.txt": "/Nft-Data/static/js/2.db7e9e39.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.93787648.js",
-    "static/js/2.8534a546.chunk.js",
+    "static/js/2.db7e9e39.chunk.js",
     "static/css/main.a8b6e677.chunk.css",
-    "static/js/main.63f65c1c.chunk.js"
+    "static/js/main.b4d21af8.chunk.js"
   ]
 }
