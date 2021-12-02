@@ -22,7 +22,7 @@ export const App = () => {
       <Router>
         <Routes>
           <Route exact path="/Nft-Data" element={<AllNfts projectsData={projectsData} />} />
-          <Route exact path="Nft-Data/ethereum" element={<NftsByCategory projectsData={projectsData} category="ethereum" />} />
+          <Route exact path="/Nft-Data/ethereum" element={<NftsByCategory projectsData={projectsData} category="ethereum" />} />
           <Route exact path="/Nft-Data/solana" element={<NftsByCategory projectsData={projectsData} category="solana" />} />
           <Route exact path="/Nft-Data/binance-smart-chain" element={<NftsByCategory projectsData={projectsData} category="binance-smart-chain" />} />
           <Route exact path="/Nft-Data/avalanche" element={<NftsByCategory projectsData={projectsData} category="avalanche" />} />
