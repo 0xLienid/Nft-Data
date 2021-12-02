@@ -19,7 +19,7 @@ export const App = () => {
 
   return (
     <div className="App" style={{ backgroundColor: "#3D4875" }}>
-      <Router basename="/#/">
+      <Router>
         <Routes>
           <Route exact path="/" element={<AllNfts projectsData={projectsData} />} />
           <Route exact path="/ethereum" element={<NftsByCategory projectsData={projectsData} category="ethereum" />} />
