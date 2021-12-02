@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { projects } from "./projects";
 import { useEffect, useState } from "react";
 import { getAllProjectData } from "./helpers/getProjectData";
